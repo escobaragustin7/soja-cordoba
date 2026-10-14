@@ -51,6 +51,7 @@ Resultados en la carpeta `salida/`:
 | `rendimiento_por_departamento.png` | Ranking de rendimiento |
 | `evolucion_provincial.png` | Superficie y rendimiento por campaña |
 
+   ## Reproducir el mapa en QGIS
 
 1. Abrí la capa de departamentos del IGN y filtrala a Córdoba.
 2. Con la calculadora de campos, creá un campo `depto_norm` con el nombre en mayúsculas y sin acentos, por ejemplo: `upper(replace(replace(replace(replace(replace("nam",'á','a'),'é','e'),'í','i'),'ó','o'),'ú','u'))` (cambiá `"nam"` por el campo de nombre de tu capa; agregá `'ñ','n'` si hace falta).
