@@ -51,7 +51,6 @@ Resultados en la carpeta `salida/`:
 | `rendimiento_por_departamento.png` | Ranking de rendimiento |
 | `evolucion_provincial.png` | Superficie y rendimiento por campaña |
 
-## Unir los resultados al mapa en QGIS
 
 1. Abrí la capa de departamentos del IGN y filtrala a Córdoba.
 2. Con la calculadora de campos, creá un campo `depto_norm` con el nombre en mayúsculas y sin acentos, por ejemplo: `upper(replace(replace(replace(replace(replace("nam",'á','a'),'é','e'),'í','i'),'ó','o'),'ú','u'))` (cambiá `"nam"` por el campo de nombre de tu capa; agregá `'ñ','n'` si hace falta).
@@ -60,8 +59,6 @@ Resultados en la carpeta `salida/`:
 5. **Simbología → Graduado** sobre `rendimiento_qq_ha`, 5 clases, rampa de verdes.
 6. Superponé la capa de zonas de la Bolsa de Cereales con contorno y sin relleno.
 7. Exportá el mapa con el **Diseñador de impresión** (título, leyenda, escala y fuente) como PNG.
-
-Otra idea de mapa: pintar `cambio_sembrada_pct` con una rampa divergente (rojo = bajó, verde = subió) para ver el corrimiento de la soja hacia el norte.
 
 ## Herramientas
 
